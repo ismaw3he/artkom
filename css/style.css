@@ -755,7 +755,7 @@ html {
     margin-right: 30px;
     cursor: pointer;
     transition: color 0.5s ease-out, background-position 0.3s;
-    outline:none;
+    outline:0;
 }
 
 .main-button:hover {
@@ -2060,6 +2060,10 @@ textarea#message:focus-within {
     }
     .main-button:hover{
         background-position: 0 0;
+    }
+    .white-btn:hover {
+        background: none;
+        color: white;
     }
 }
 
