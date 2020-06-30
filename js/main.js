@@ -6,7 +6,7 @@ function zoomImg(){
     img.classList.add("zoom-in-tv");
 }
 window.addEventListener('scroll', function(e) {
-    if(e.path[1].scrollY >330){
+    if(window.scrollY >330){
         zoomImg();
     }
 });
