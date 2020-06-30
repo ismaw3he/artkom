@@ -755,6 +755,7 @@ html {
     margin-right: 30px;
     cursor: pointer;
     transition: color 0.5s ease-out, background-position 0.3s;
+    outline:none;
 }
 
 .main-button:hover {
@@ -823,7 +824,6 @@ html {
 .white-btn:hover {
     background: white;
     border: 2px solid white;
-    width: 198px;
     color: black;
 }
 
@@ -1172,12 +1172,12 @@ html {
     margin-top: 35px;
     height: 50px;
     border-radius: 10px;
-    border: 1px solid gray;
+    border: 1px solid #a09f9f;
     font-size: 22px;
     padding-left: 15px;
     outline: none;
     transition: 0.5s all;
-    box-shadow: 1px 1px 7px 2px darkgray;
+    box-shadow: 1px 1px 7px 2px #e8e8e8;
 }
 
 #message {
@@ -1210,27 +1210,27 @@ html {
 }
 
 input#name:hover {
-    box-shadow: 1px 1px 7px 2px #4f4f4f;
+    box-shadow: 1px 1px 7px 2px #a9a9a9;
 }
 
 input#name:focus-within {
-    box-shadow: 1px 1px 7px 2px #4f4f4f;
+    box-shadow: 1px 1px 7px 2px #cacaca;
 }
 
 input#number:hover {
-    box-shadow: 1px 1px 7px 2px #4f4f4f;
+    box-shadow: 1px 1px 7px 2px #cacaca;
 }
 
 input#number:focus-within {
-    box-shadow: 1px 1px 7px 2px #4f4f4f;
+    box-shadow: 1px 1px 7px 2px #cacaca;
 }
 
 textarea#message:hover {
-    box-shadow: 1px 1px 7px 2px #4f4f4f;
+    box-shadow: 1px 1px 7px 2px #cacaca;
 }
 
 textarea#message:focus-within {
-    box-shadow: 1px 1px 7px 2px #4f4f4f;
+    box-shadow: 1px 1px 7px 2px #cacaca;
 }
 
 .main-body {
@@ -2058,6 +2058,9 @@ textarea#message:focus-within {
         width: 275px;
         height: 230px;
     }
+    .main-button:hover{
+        background-position: 0 0;
+    }
 }
 
 @media only screen and (max-width: 400px){
@@ -2083,3 +2086,4 @@ textarea#message:focus-within {
         width: 90%;
     }
 }
+
