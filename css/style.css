@@ -1115,7 +1115,7 @@ html {
 }
 
 .methods-images {
-    width: 70%;
+    width: 90%;
     margin-top: 60px;
     display: flex;
     align-items: center;
@@ -1131,6 +1131,7 @@ html {
 }
 
 .method-pay {
+    width: 60%;
     cursor: pointer;
     transition: 0.2s all ease-in;
 }
@@ -1299,6 +1300,8 @@ textarea#message:focus-within {
 }
 
 .footer-icon {
+    text-decoration: none;
+    color: white;
     width: 30px;
     height: 30px;
     padding: 5px;
@@ -1532,7 +1535,7 @@ textarea#message:focus-within {
     }
 
     .methods-images {
-        width: 75%;
+        width: 95%;
         margin-top: 25px;
     }
 
@@ -1571,6 +1574,7 @@ textarea#message:focus-within {
     }
 
     .footer-icon {
+        color: white;
         width: 25px;
         height: 25px;
     }
@@ -1578,6 +1582,7 @@ textarea#message:focus-within {
     .footer-icons {
         width: 130px;
     }
+
 
     .main-body {
         margin-bottom: 300px;
