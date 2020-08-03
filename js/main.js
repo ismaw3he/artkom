@@ -11,6 +11,7 @@ window.addEventListener('scroll', function(e) {
     }
 });
 window.onload = function() {
+    const loaderContainer= document.getElementsByClassName("loader-container")[0];
     document.getElementById("submit-btn").addEventListener('click',(event)=>{
 
         let message = {
@@ -19,8 +20,27 @@ window.onload = function() {
             message: messageInput.value
         };
         emailjs.send("gmail", "artkom", message,'user_cQXScjsh5GkmXVxqDhC9F')
+        .then(function(response) {
+            loaderContainer.classList.add("hidden");
+            const success = document.querySelector(".message-alert-success");
+            success.classList.add("alert-active");
+            setTimeout(()=>{
+                success.classList.remove("alert-active");
+            }, 4000)
+         }, function(error) {
+            loaderContainer.classList.add("hidden");
+            const errorMessage = document.querySelector(".message-alert-error");
+            errorMessage.classList.add("alert-active");
+            setTimeout(()=>{
+                errorMessage.classList.remove("alert-active");
+            }, 4000)
+         });
+         loaderContainer.classList.remove("hidden");
+         nameInput.value = "";
+         numberInput.value = "";
+         messageInput.value = "";
     });
-    const loaderContainer= document.getElementsByClassName("loader-container")[0];
+    
     loaderContainer.classList.add("hidden");
 };
 
