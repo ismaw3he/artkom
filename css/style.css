@@ -897,7 +897,7 @@ html {
     height: 100%;
     display: flex;
     width: 300%;
-    transition: all 0.3s;
+    transition: all 0.6s;
 }
 .slider section{
     flex-basis: 100%;
@@ -954,6 +954,20 @@ html {
     right: -50px;
     bottom: 100px;
 }
+#ip-tv{
+    width: 700px;
+}
+.red-span{
+    color: #ca006f;
+    font-size: 30px;
+    font-weight: bold;
+}
+.green-span{
+    color: green;
+    font-size: 30px;
+    font-weight: bold;
+}
+
 /************Our work******************/
 
 .section-our-work {
@@ -2202,3 +2216,13 @@ textarea#message:focus-within {
 .alert-active{
     right: 20px;
 }
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+  }
