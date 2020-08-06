@@ -855,6 +855,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .about-us-content {
@@ -941,6 +942,17 @@ html {
 
 .controls ul li.selected{
     background: transparent;
+}
+#reqemsal{
+    width: 1000px;
+    transform: translateX(-100px);
+    z-index: 0;
+}
+#full-hd{
+    position: absolute;
+    width: 200px;
+    right: -50px;
+    bottom: 100px;
 }
 /************Our work******************/
 
@@ -1407,6 +1419,7 @@ textarea#message:focus-within {
 .footer-fixed > p {
     margin-top: 8px;
 }
+
 
 /*******Media queries**************/
 
