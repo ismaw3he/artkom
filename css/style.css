@@ -944,8 +944,8 @@ html {
     background: transparent;
 }
 #reqemsal{
-    width: 1000px;
-    transform: translateX(-100px);
+    width: 770px;
+    transform: translateX(-60px);
     z-index: 0;
 }
 #full-hd{
@@ -1072,7 +1072,7 @@ html {
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-
+    margin-top: -1px;
 }
 
 .tariffs-cards-container {
@@ -1133,7 +1133,9 @@ html {
 .box-content-icon {
     width: 40px;
 }
-
+.box-icon-bigger {
+    width: 50px;
+}
 .box-content-small-icon {
     width: 35px;
     margin: 0 10px;
@@ -1149,8 +1151,9 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 30px;
+    height: 90px;
 }
 
 .card-content-header {
@@ -1472,6 +1475,14 @@ textarea#message:focus-within {
     .tariffs-cards-container {
         width: 80%;
     }
+    #reqemsal {
+        width: 650px;
+        transform: translateX(-40px);
+    }
+    #ip-tv {
+        width: 580px;
+        transform: translateX(30px);
+    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -1682,6 +1693,18 @@ textarea#message:focus-within {
     .footer {
         height: 300px;
     }
+
+    #reqemsal {
+        width: 625px;
+        transform: translateX(-50px);
+    }
+    #ip-tv {
+        width: 540px;
+        transform: translateX(30px);
+    }
+    .box-icon-bigger {
+        width: 44px;
+    }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -1714,6 +1737,14 @@ textarea#message:focus-within {
     .header-content-buttons {
         margin-top: 65px;
         width: 360px;
+    }
+    #reqemsal {
+        width: 585px;
+        transform: translateX(-50px) translateY(-30px);
+    }
+    #ip-tv {
+        width: 480px;
+        transform: translateX(30px);
     }
 }
 @media only screen and (max-width: 1000px){
@@ -1805,6 +1836,14 @@ textarea#message:focus-within {
     }
     .contact-us-bottom {
         width: 90%;
+    }
+    #reqemsal {
+        width: 501px;
+        transform: translateX(-50px) translateY(-30px);
+    }
+    .red-span,
+    .green-span {
+        font-size: 22px;
     }
 }
 
@@ -1974,6 +2013,19 @@ textarea#message:focus-within {
     .main-body {
         margin-bottom: 265px;
     }
+    #reqemsal {
+        width: 395px;
+        transform: translateX(-25px) translateY(-30px);
+    }
+    #ip-tv {
+        width: 385px;
+        transform: translateX(25px);
+    }
+    .controls ul li {
+        width: 5px;
+        height: 5px;
+    }
+
 }
 
 @media only screen and (max-width: 700px){
@@ -2093,6 +2145,19 @@ textarea#message:focus-within {
     .box {
         width: 100%;
     }
+    #reqemsal {
+        width: 334px;
+        transform: translateX(-35px) translateY(-20px);
+    }
+    #ip-tv {
+        width: 300px;
+    }
+    .red-span, .green-span {
+        font-size: 18px;
+    }
+    .card-content-header-box {
+        height: 70px;
+    }
 }
 
 @media only screen and (max-width: 600px){
@@ -2139,6 +2204,7 @@ textarea#message:focus-within {
         height: 627px;
     }
     .about-us-content {
+        order: 2;
         width: 90%;
         height: 60%;
     }
@@ -2161,11 +2227,19 @@ textarea#message:focus-within {
         background: none;
         color: white;
     }
+    #reqemsal {
+        width: 390px;
+        transform: translateX(0px) translateY(45px);
+    }
+    #ip-tv {
+        width: 325px;
+        transform: translateX(0px) translateY(30px);
+    }
 }
 
 @media only screen and (max-width: 400px){
     .mobile {
-        width: 85%;
+        width: 60%;
     }
     .header-content h2 {
         margin-top: 15px;
@@ -2185,7 +2259,12 @@ textarea#message:focus-within {
     .zoom-in-tv {
         width: 90%;
     }
+    #reqemsal,#ip-tv {
+        width: 90%;
+    }
 }
+
+
 .alert{
     position: fixed;
     right: -400px;
